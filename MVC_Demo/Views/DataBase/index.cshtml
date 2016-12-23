@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>This is DataBase operation Demo Page</h2>
+
+
+<table border="1">
+    <tr>
+        <th> 用户ID</th>
+        <th>用户名</th>
+        <th>用户性别</th>
+    </tr>
+    @{
+        foreach (var item in ViewBag.table)
+        {
+            <tr>
+                <td>@item.id</td>&nbsp;&nbsp;
+                <td>@item.name</td>&nbsp;&nbsp;
+                <td>@item.sex</td> 
+            </tr>
+        }
+    }
+
+</table>

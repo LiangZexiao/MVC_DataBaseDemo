@@ -11,6 +11,8 @@
         <th> 用户ID</th>
         <th>用户名</th>
         <th>用户性别</th>
+        <th>修改</th>
+        <th>删除</th>
     </tr>
     @{
         foreach (var item in ViewBag.table)
@@ -19,6 +21,8 @@
                 <td>@item.id</td>&nbsp;&nbsp;
                 <td>@item.name</td>&nbsp;&nbsp;
                 <td>@item.sex</td> 
+                <td>@Html.ActionLink("修改", "Update", "DataBase")</td>
+                <td><a href="/DataBase/Delete">删除</a></td>
             </tr>
         }
     }

@@ -83,9 +83,9 @@ namespace MVC_Demo.Class
 
             return item;
         }
-        public int UpdateRecord(Table_1 record, int id)
+        public int UpdateRecord(Table_1 record)
         {
-            string sql = "UPDATE Table_1 SET name = '" + record.name + "',sex='" + record.sex + "' WHERE id = " + Convert.ToInt32(id) + "";
+            string sql = "UPDATE Table_1 SET name = '" + record.name + "',sex='" + record.sex + "' WHERE id = " + record.id + "";
 
             conn.Open();
             SqlCommand comm = new SqlCommand(sql, conn);

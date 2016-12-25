@@ -4,8 +4,9 @@
 }
 
 <h2>This is DataBase operation Demo Page</h2>
+<h4><a href="/DataBase/Add_Page">新增记录</a></h4>
 
-
+<br />
 <table border="1">
     <tr>
         <th> 用户ID</th>
@@ -21,8 +22,9 @@
                 <td>@item.id</td>&nbsp;&nbsp;
                 <td>@item.name</td>&nbsp;&nbsp;
                 <td>@item.sex</td> 
-                <td>@Html.ActionLink("修改", "Update", "DataBase")</td>
-                <td><a href="/DataBase/Delete">删除</a></td>
+                <!--<td>@Html.ActionLink("修改", "Update", "DataBase")</td>-->
+                <td><a href="/DataBase/Update_Page/@item.id">修改</a></td>
+                <td><a href="/DataBase/Delete/@item.id">删除</a></td>
             </tr>
         }
     }

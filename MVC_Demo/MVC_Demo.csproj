@@ -269,8 +269,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\DataBase\Index.cshtml" />
-    <Content Include="Views\DataBase\Update.cshtml" />
-    <Content Include="Views\DataBase\Delete.cshtml" />
+    <Content Include="Views\DataBase\Update_Page.cshtml" />
+    <Content Include="Views\DataBase\Add_Page.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
